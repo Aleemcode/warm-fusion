@@ -3,5 +3,32 @@
   "framework": null,
   "buildCommand": null,
   "installCommand": "echo 'Deploying static site'",
-  "outputDirectory": "."
+  "outputDirectory": ".",
+  "redirects": [
+    {
+      "source": "/SKILL.md",
+      "destination": "https://www.mavenbuilderacademy.com.ng/warm-fusion/SKILL.md",
+      "permanent": true
+    },
+    {
+      "source": "/src/styles/tokens.css",
+      "destination": "https://www.mavenbuilderacademy.com.ng/warm-fusion/tokens.css",
+      "permanent": true
+    },
+    {
+      "source": "/dmaven.preset.js",
+      "destination": "https://www.mavenbuilderacademy.com.ng/warm-fusion/tailwind.preset.js",
+      "permanent": true
+    },
+    {
+      "source": "/",
+      "destination": "https://www.mavenbuilderacademy.com.ng/warm-fusion",
+      "permanent": true
+    },
+    {
+      "source": "/:path*",
+      "destination": "https://www.mavenbuilderacademy.com.ng/warm-fusion",
+      "permanent": true
+    }
+  ]
 }
